@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bare + UltraViolet Proxy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 Universal Web Proxy</h1>
+            <p>Powered by Bare & UltraViolet</p>
+        </div>
+
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="urlInput" 
+                placeholder="Enter URL (e.g., https://example.com)" 
+                autocomplete="off"
+            >
+            <button onclick="navigateToUrl()">Browse</button>
+        </div>
+
+        <div class="info-section">
+            <h2>How to Use</h2>
+            <ul>
+                <li>Enter any website URL in the search box above</li>
+                <li>Click "Browse" or press Enter to load the website</li>
+                <li>The site will load through the Bare proxy</li>
+                <li>All requests are proxied through this server</li>
+            </ul>
+        </div>
+
+        <div class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>✅ Load any website through the proxy</li>
+                <li>✅ Bare server for handling requests</li>
+                <li>✅ UltraViolet for URL rewriting</li>
+                <li>✅ CORS enabled</li>
+                <li>✅ Cookie support</li>
+            </ul>
+        </div>
+    </div>
+
+    <iframe id="proxyFrame" style="display:none;"></iframe>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tomphttp/bare-client@1.0.0/dist/index.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@titaniumnetwork/ultraviolet@1.0.0/dist/uv.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
